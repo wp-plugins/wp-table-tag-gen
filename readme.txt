@@ -1,4 +1,4 @@
-=== WP Table Tag GEN ===
+=== WP Table Tag Gen ===
 Contributors: shunk
 Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
 Tags: admin, post, page, editor
