@@ -425,6 +425,7 @@ $( '#merge' ).click(function() {
 
 	if ( selected.length === 0 ) {
 		getMessage( '#select-cells' );
+		return;
 	}
 
 	selected.each(function() {
@@ -528,6 +529,7 @@ $( '#replace' ).click(function() {
 
 	if ( selected.length === 0 ) {
 		getMessage( '#select-cells' );
+		return;
 	}
 
 	selected.each(function() {
@@ -559,6 +561,7 @@ $( '#split' ).click(function() {
 
 	if ( selected.length === 0 ) {
 		getMessage( '#select-cells' );
+		return;
 	}
 
 	splitCell();
