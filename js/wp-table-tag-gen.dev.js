@@ -148,11 +148,7 @@ $rowcol.keyup(function() {
 	generateTags( history() );
 });
 
-if ( window.localStorage ) {
-	localStorage.clear();
-	localStorage.setItem( 'index', 0 );
-	localStorage.setItem( 'undo', 0 );
-} else {
+if ( ! window.localStorage ) {
 	$( '#undo, #redo, #initialize' ).hide();
 }
 
