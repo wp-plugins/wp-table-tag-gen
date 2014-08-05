@@ -13,14 +13,17 @@ This plugin generates table tags with a simple operation.
 == Description ==
 
 This plugin generates table tags with a simple operation.
+You can merge cells by dragging and clicking, and enter the character directly in the table.
+VERY EASY!
 
-1.First, please choose the size of the table (rows and columns). You can type on the keyboard a number, click on the spinner, or turn the mouse wheel.
-2.if you want to use th element instead of td element (or vice versa), please drag to select the cells you want to convert, and click on the td &harr; th button.
-3.If you want to merge cells, please drag to select them and click the "merge" button.Merged cell can be undone in a split button.
-4.If you enter a character in the table directly, please click the "chars" button, and be set to an input mode. When you are done, please click on the "output" button.
-5.To apply the CSS, it is possible to set the class attributes for the cell.
-6.All operations can be undone by clicking the "undo" button.
-7.When table is complete, please click on the button "Insert into post".
+#### How to use
+1. First, please choose the size of the table (rows and columns). You can type on the keyboard a number, click on the spinner, or turn the mouse wheel.
+2. if you want to use th element instead of td element (or vice versa), please drag to select the cells you want to convert, and click on the td &harr; th button.
+3. If you want to merge cells, please drag to select them and click the "merge" button.Merged cell can be undone in a split button.
+4. If you enter a character in the table directly, please click the "chars" button, and be set to an input mode. When you are done, please click on the "output" button.
+5. To apply the CSS, it is possible to set the class attributes for the cell.
+6. All operations can be undone by clicking the "undo" button.
+7. When table is complete, please click on the button "Insert into post".
 
 
 == Installation ==
