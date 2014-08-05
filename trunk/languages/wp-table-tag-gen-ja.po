@@ -1,0 +1,132 @@
+# This file is distributed under the same license as the WP Table Tag Gen package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Table Tag Gen 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-19 22:56+0900\n"
+"PO-Revision-Date: 2014-07-19 22:56+0900\n"
+"Last-Translator: Shunsuke KUSAKABE <shunsuke.kusakabe@gmail.com>\n"
+"Language-Team: Shunsuke KUSAKABE <shunsuke.kusakabe@gmail.com>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-tabletag-gen.php:54
+msgid "row"
+msgstr "行"
+
+#: ../wp-tabletag-gen.php:55
+msgid "col"
+msgstr "列"
+
+#: ../wp-tabletag-gen.php:59
+msgid ""
+"To increase or decrease the value, you can either enter on the keyboard, "
+"click on the spinner, or turn the mouse wheel."
+msgstr ""
+"数値を増減させるには、キーボードで入力するか、スピナーをクリックするか、マウ"
+"スホイールを回してください。"
+
+#: ../wp-tabletag-gen.php:63
+msgid "Merge cells"
+msgstr "セルを結合する"
+
+#: ../wp-tabletag-gen.php:63
+msgid "Merge"
+msgstr "結合"
+
+#: ../wp-tabletag-gen.php:64
+msgid "Split the merged cell"
+msgstr "結合されたセルを分割する"
+
+#: ../wp-tabletag-gen.php:64
+msgid "Split"
+msgstr "分割"
+
+#: ../wp-tabletag-gen.php:65
+msgid "Replace &lt;td&gt; and &lt;th&gt; each other"
+msgstr " &lt;td&gt; と &lt;th&gt; を互いに置き換える"
+
+#: ../wp-tabletag-gen.php:66
+msgid "Enter the characters"
+msgstr "文字を入力する"
+
+#: ../wp-tabletag-gen.php:66
+msgid "Chars"
+msgstr "文字"
+
+#: ../wp-tabletag-gen.php:67
+msgid "Output the characters"
+msgstr "文字を出力する"
+
+#: ../wp-tabletag-gen.php:67 ../wp-tabletag-gen.php:69
+msgid "Output"
+msgstr "出力"
+
+#: ../wp-tabletag-gen.php:68
+msgid "Enter the name of the class"
+msgstr "クラス名を入力する"
+
+#: ../wp-tabletag-gen.php:69
+msgid "Output the name of the class"
+msgstr "クラス名を出力する"
+
+#: ../wp-tabletag-gen.php:70
+msgid "Undo"
+msgstr "1つ戻る"
+
+#: ../wp-tabletag-gen.php:71
+msgid "Redo"
+msgstr "1つ進む"
+
+#: ../wp-tabletag-gen.php:72
+msgid "initialize"
+msgstr "初期化する"
+
+#: ../wp-tabletag-gen.php:72
+msgid "Initialize"
+msgstr "初期化"
+
+#: ../wp-tabletag-gen.php:73
+msgid "insert into post"
+msgstr "投稿に挿入"
+
+#: ../wp-tabletag-gen.php:77
+msgid "You can select the cells by dragging."
+msgstr "ドラッグしてセルを選択することができます。"
+
+#: ../wp-tabletag-gen.php:78
+msgid "Please enter the characters."
+msgstr "文字を入力してください。"
+
+#: ../wp-tabletag-gen.php:79
+msgid "Please enter the name of the class."
+msgstr "クラス名を入力してください。"
+
+#: ../wp-tabletag-gen.php:81
+msgid "It is not possible to marge &lt;td&gt; and &lt;th&gt;."
+msgstr "&lt;td&gt; と &lt;th&gt; を結合することはできません。"
+
+#: ../wp-tabletag-gen.php:84
+msgid "It is not possible to re-merge the merged cells."
+msgstr "結合されたセルを再結合することはできません。"
+
+#: ../wp-tabletag-gen.php:87
+msgid "Please enter a number."
+msgstr "数字を入力してください。"
+
+#: ../wp-tabletag-gen.php:90
+msgid "Please enter a natural number (1,2,3...)."
+msgstr "自然数を入力してください。"
+
+#: ../wp-tabletag-gen.php:93
+msgid "Please select the cells to be operated by dragging."
+msgstr "操作対象となるセルをドラッグして選択してください。"
+
+#~ msgid "To merge the cells, please select the cells by dragging."
+#~ msgstr "結合するには、セルを選択してください。"
