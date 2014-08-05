@@ -12,7 +12,7 @@ This plugin generates table tags with a simple operation.
 
 == Description ==
 
-This plugin generates table tags with a simple operation.
+This plugin generates table tags with simple operations.
 You can merge cells by dragging and clicking, and enter the character directly in the table.
 VERY EASY!
 
