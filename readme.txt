@@ -4,7 +4,7 @@ Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
 Tags: admin, post, page, editor
 Requires at least: 3.3
 Tested up to: 3.9.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ Feel free to contact me at shunk76@yahoo.co.jp
 2. WP Table Tag Gen
 
 == Changelog ==
+
+= 1.0.2 =
+* bug fix.
 
 = 1.0.1 =
 * bug fix.
