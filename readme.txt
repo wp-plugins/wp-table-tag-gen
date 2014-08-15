@@ -45,6 +45,9 @@ Feel free to contact me at shunk76@yahoo.co.jp
 
 == Changelog ==
 
+= 1.0.3 =
+* edited readme.txt and wp-table-tag-gen.php in right English, may be.
+
 = 1.0.2 =
 * bug fix.
 
