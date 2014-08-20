@@ -4,7 +4,7 @@ Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
 Tags: admin, post, page, editor
 Requires at least: 3.3
 Tested up to: 3.9.2
-Stable tag: 1.0.2
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ VERY EASY!
 
 #### How to use
 1. First, please choose the size of the table (rows and columns). You can type on the keyboard a number, click on the spinner, or turn the mouse wheel.
-2. If you want to use &lt;th&gt; element instead of &lt;td&gt; element (or vice versa), please drag to select the cells you want to convert, and click on the td &harr; th button.
+2. If you want to use &lt;th&gt; element instead of &lt;td&gt; element (or vice versa), please drag to select the cells you want to convert, and click on the "td &harr; th" button.
 3. If you want to merge cells, please drag to select them and click the "merge" button. Merged cells can be undone in the "split" button.
 4. If you enter characters in the table, please click the "chars" button, and be set to an input mode. When you are done, please click on the "output" button.
 5. To apply the CSS, it is possible to set the class attributes for the cells.
@@ -44,6 +44,9 @@ Feel free to contact me at shunk76@yahoo.co.jp
 2. WP Table Tag Gen
 
 == Changelog ==
+
+= 1.0.4 =
+* bug fix.
 
 = 1.0.3 =
 * edited readme.txt and wp-table-tag-gen.php in right English, may be.

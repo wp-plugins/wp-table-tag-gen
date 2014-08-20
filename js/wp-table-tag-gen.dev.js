@@ -214,12 +214,13 @@ $( '#chars' ).click(function() {
 	$( this ).hide();
 	$( '#output-chars' ).show();
 
-	$rowcol.unbind( 'mousewheel' )
+	$rowcol.unbind( 'mousewheel' );
 
 	$wrapper.find( 'td, th' ).each(function() {
 		var text = $( this ).text();
 		$( this ).html( '<textarea rows="2" name="textarea">' + text + '</textarea> ' );
 	});
+
 	if ( isUA( 'webkit' ) ) {
 		$wrapper.find( 'td:has( input ), th:has( input )' ).css( 'padding', '1px 3px 2px' );
 	}
@@ -609,6 +610,7 @@ $( '#redo' ).click(function() {
 
 $( '#initialize' ).click(function() {
 	generateTable( $row.val(), $col.val() );
+	$table.removeAttr( 'class' );
 	generateTags();
 
 	if ( window.localStorage ) {
