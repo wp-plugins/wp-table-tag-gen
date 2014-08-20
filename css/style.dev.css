@@ -70,10 +70,6 @@
 	display: block;
 }
 
-#generator .help {
-	display: inline-block;
-}
-
 #generator #output-chars,
 #generator #output-class {
 	display: none;
