@@ -51,7 +51,6 @@ class WpTableTagGen {
 			$css_file .= '.dev';
 			$js_file .= '.dev';
 		}
-
 		wp_enqueue_style( WP_TTG, $css_file.'.css', false, '1.0', 'all' );
 		wp_enqueue_script( WP_TTG, $js_file.'.js', array( 'jquery-ui-selectable' ), '1.0', true );
 		add_thickbox();
