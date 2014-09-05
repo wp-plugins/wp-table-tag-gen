@@ -1,7 +1,8 @@
 === WP Table Tag Gen ===
 Contributors: shunk
-Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
+Plugin URI: https://github.com/shunk76/wp-table-tag-gen
 Tags: admin, post, page, editor
+Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
 Requires at least: 3.3
 Tested up to: 4.0
 Stable tag: 1.0.4
