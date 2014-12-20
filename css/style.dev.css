@@ -6,6 +6,12 @@
 
 @charset "UTF-8";
 
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px dotted black;
+}
+
 #generator {
 	margin-bottom: 10px;
 }
@@ -68,10 +74,6 @@
 
 #generator .help:hover .hint {
 	display: block;
-}
-
-#generator .help {
-	display: inline-block;
 }
 
 #generator #output-chars,
