@@ -46,6 +46,9 @@ Feel free to contact me at shunk76@yahoo.co.jp
 
 == Changelog ==
 
+= 1.0.6 =
+Tested up to: 4.1
+
 = 1.0.5 =
 * Bug fix : work in case of using the SSL admin console.
 
