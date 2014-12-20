@@ -5,15 +5,15 @@ Tags: admin, post, page, editor
 Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
 Requires at least: 3.3
 Tested up to: 4.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin generates table tags with simple operations.
+WP Table Tag Gen allows you to get HTML tables without writing HTML and merge multiple cells.
 
 == Description ==
 
-This plugin generates table tags with simple operations.
+This plugin allows you to get HTML tables without writing HTML and merge multiple cells.
 You can merge cells by dragging and clicking, and enter the characters directly in the table.
 VERY EASY!
 
