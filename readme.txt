@@ -4,7 +4,7 @@ Plugin URI: https://github.com/shunk76/wp-table-tag-gen
 Tags: admin, post, page, editor
 Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
 Requires at least: 3.3
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
