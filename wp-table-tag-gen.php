@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WP Tabel Tag Gen
- * Plugin URI: https://github.com/shunk76/wp-table-tag-gen
+ * Plugin URL: https://github.com/shunk76/wp-table-tag-gen
  * Description: This plugin generates table tags with simple operations.
  * Version: 1.0.6
  * Author:  Shunsuke Kusakabe

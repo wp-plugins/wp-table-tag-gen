@@ -4,16 +4,16 @@ Plugin URI: https://github.com/shunk76/wp-table-tag-gen
 Tags: admin, post, page, editor
 Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
 Requires at least: 3.3
-Tested up to: 4.1
+Tested up to: 4.2.2
 Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WP Table Tag Gen allows you to get HTML tables without writing HTML and merge multiple cells.
+This plugin generates table tags with simple operations.
 
 == Description ==
 
-This plugin allows you to get HTML tables without writing HTML and merge multiple cells.
+This plugin generates table tags with simple operations.
 You can merge cells by dragging and clicking, and enter the characters directly in the table.
 VERY EASY!
 
@@ -47,7 +47,7 @@ Feel free to contact me at shunk76@yahoo.co.jp
 == Changelog ==
 
 = 1.0.6 =
-Tested up to: 4.1
+* Bug fix : removed toLowerCase() in wp-table-tag-gen.js
 
 = 1.0.5 =
 * Bug fix : work in case of using the SSL admin console.
