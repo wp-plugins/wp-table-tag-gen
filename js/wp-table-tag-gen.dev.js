@@ -768,13 +768,12 @@ function generateTags( data ) {
 	}
 
 	table = table
-		// .toLowerCase()
 		.replace( /<\/table>/g, '\n</table>' )
 		.replace( /&lt;/g, '<' )
 		.replace( /&gt;/g, '>' )
 		.replace( /ui-selecte(d\s|d)/g, '' )
 		.replace( /ui-selecte(e\s|e)/g, '' )
-		.replace( /ttg-merged/g, '' )
+		.replace( /TTG-merged/g, '' )
 		.replace( / class=\"\"/g, '' )
 		.replace( / class=\" \"/g, '' )
 		.replace( / style=\".*?\"/g, '' )
