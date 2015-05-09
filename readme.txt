@@ -5,7 +5,7 @@ Tags: admin, post, page, editor
 Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
 Requires at least: 3.3
 Tested up to: 4.2.2
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,7 @@ Feel free to contact me at shunk76@yahoo.co.jp
 
 == Changelog ==
 
-= 1.0.6 =
+= 1.0.7 =
 * Bug fix : removed toLowerCase() in wp-table-tag-gen.js
 
 = 1.0.5 =
