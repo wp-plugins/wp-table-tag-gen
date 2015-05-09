@@ -76,6 +76,7 @@ jQuery(function($) {
 		});
 	}
 
+
 	if( window.QTags ){
 		QTags.addButton( 'ttg', 'table', function() {
 			tb_show( title, '#TB_inline?height=&width=&inlineId=wp-table-tag-gen', false );
@@ -197,7 +198,7 @@ $( '#output-class' ).click(function() {
 	});
 	$wrapper.find( 'tr' ).each(function( i ) {
 		$( this ).removeAttr( 'class' );
-		if ( trClass[ i ] != undefined ) {
+		if ( trClass[ i ] !== undefined ) {
 			$( this ).addClass( trClass[ i ] );
 		}
 	});
@@ -252,7 +253,7 @@ $( '#class' ).click(function() {
 	$wrapper.find( 'td, th' ).each(function() {
 		$( this ).removeClass( 'ui-selectee ui-selected' + ' ' + classMerged );
 		var thisClass = $( this ).attr( 'class' );
-		if ( thisClass == undefined ) thisClass = '';
+		if ( thisClass === undefined ) thisClass = '';
 		$( '<input type="text" value="' + thisClass + '" size="5">' ).appendTo( this );
 		$( this ).children().addClass( 'class' );
 	});
@@ -266,10 +267,11 @@ $( '#class' ).click(function() {
 
 	var tableClass = $table.attr( 'class' );
 
-	if ( tableClass != undefined ) {
+	if ( tableClass !== undefined ) {
 		tableClass = tableClass
 		.replace( /ui-selecte(d\s|d)/g, '' )
-		.replace( /ui-selecte(e\s|e)/g, '' );
+		.replace( /ui-selecte(e\s|e)/g, '' )
+		.replace( /ui-selectable/g, '');
 	}
 	if ( ! tableClass ) {
 		tableClass = '';
@@ -315,7 +317,7 @@ $( '#class' ).click(function() {
 		var left = $( this ).position().left;
 
 		var trClass = $( this ).attr( 'class' );
-		if ( trClass != undefined ) {
+		if ( trClass !== undefined ) {
 			trClass = trClass
 			.replace( /ui-selecte(d\s|d)/g, '' )
 			.replace( /ui-selecte(e\s|e)/g, '' );
@@ -348,17 +350,17 @@ $( '#class' ).click(function() {
 			$( '.tr-class' ).each(function( i ) {
 				classes[ i ] = $( this ).val();
 				var trVal = $( this ).val();
-				if ( i % 2 == 0 ) {
-					$( this ).val( 'even' + ( trVal != '' ? ' ' + trVal : '' ) );
+				if ( i % 2 === 0 ) {
+					$( this ).val( 'even' + ( trVal !== '' ? ' ' + trVal : '' ) );
 				} else {
-					$( this ).val( 'odd' + ( trVal != '' ? ' ' + trVal : '' ) );
+					$( this ).val( 'odd' + ( trVal !== '' ? ' ' + trVal : '' ) );
 				}
 			});
 		} else {
 			$.cookie( 'checked' , '' );
 			$( '.tr-class' ).each(function( i ) {
 				classes[ i ] = $( this ).val();
-				if ( classes[ i ] != undefined ) {
+				if ( classes[ i ] !== undefined ) {
 					classes[ i ] =  classes[ i ]
 					.replace( /eve(n\s|n)/g, '' )
 					.replace( /od(d\s|d)/g, '' );
@@ -433,12 +435,13 @@ $( '#merge' ).click(function() {
 		}
 	});
 
-	if ( td == true && th == true ) {
+	var elm = '';
+	if ( td === true && th === true ) {
 		getMessage( '#cant-merge' );
 		return false;
-	} else if ( td == true && th == null) {
-		var elm  = 'td';
-	} else if ( td == null && th == true ) {
+	} else if ( td === true && th === null) {
+		elm  = 'td';
+	} else if ( td === null && th === true ) {
 		elm = 'th';
 	}
 
@@ -462,7 +465,7 @@ $( '#merge' ).click(function() {
 		if ( row != rowspan && col == colspan ) {
 			if ( rowspan > 1 ) {
 				$( 'tr.ui-selected:not( tr.ui-selected:first )' ).remove();
-				rowspan = 1
+				rowspan = 1;
 			}
 		} else if ( row == rowspan && col != colspan ) {
 			if ( colspan > 1 ) {
@@ -476,14 +479,15 @@ $( '#merge' ).click(function() {
 		var selectedRow = $( 'tr' ).index( $( 'tr.ui-selected:first' ) );
 		var selectedFirst = $( elm ).index( $( elm + '.ui-selected:first' ) );
 
+		var selected_col;
 		if ( selectedFirst < col ) {
-			var selected_col = selectedFirst;
+			selected_col = selectedFirst;
 		} else {
-			var selected_col = selectedFirst - col * selectedRow ;
+			selected_col = selectedFirst - col * selectedRow ;
 		}
 
 		$( 'tr.ui-selected' ).each(function( i ) {
-			if ( i == 0 ) {
+			if ( i === 0 ) {
 				if ( colspan > 1 ) {
 					$( this ).children( elm + '.ui-selected:not(.ui-selected:first)' ).remove();
 				}
@@ -631,11 +635,13 @@ $( '#initialize' ).click(function() {
 $( '#insert' ).click(function() {
 	var tags = $( '[name=source]', '#generator' ).val();
 	$( '#content' ).insertAtCaret(tags);
-	tb_remove()
+	tb_remove();
 });
 
 
-// functions
+/*============================================
+	functions
+============================================*/
 
 $.fn.extend({
     insertAtCaret: function(v) {
@@ -651,7 +657,7 @@ $.fn.extend({
 
 function isUA( arg ) {
   return new RegExp(arg, 'i' ).test(navigator.userAgent);
-};
+}
 
 function generateTable( row, col ) {
 	$wrapper.find( 'table' ).empty();
@@ -734,7 +740,7 @@ function historyBtn() {
 		// undo 不可 redo 可 i > u && u == 0
 
 		if ( i == u ) {
-			if ( u == 0 ) {
+			if ( u === 0 ) {
 				$( '#undo' ).attr( 'disabled', 'disabled' );
 				$( '#redo' ).attr( 'disabled', 'disabled' );
 			} else {
@@ -742,7 +748,7 @@ function historyBtn() {
 				$( '#redo' ).attr( 'disabled', 'disabled' );
 			}
 		} else {
-			if ( u == 0 ) {
+			if ( u === 0 ) {
 				$( '#undo' ).attr( 'disabled', 'disabled' );
 				$( '#redo' ).removeAttr( 'disabled' );
 			} else {
@@ -762,13 +768,12 @@ function generateTags( data ) {
 	}
 
 	table = table
-		.toLowerCase()
 		.replace( /<\/table>/g, '\n</table>' )
 		.replace( /&lt;/g, '<' )
 		.replace( /&gt;/g, '>' )
 		.replace( /ui-selecte(d\s|d)/g, '' )
 		.replace( /ui-selecte(e\s|e)/g, '' )
-		.replace( /ttg-merged/g, '' )
+		.replace( /TTG-merged/g, '' )
 		.replace( / class=\"\"/g, '' )
 		.replace( / class=\" \"/g, '' )
 		.replace( / style=\".*?\"/g, '' )
@@ -796,9 +801,10 @@ function splitCell() {
 		$( this ).removeAttr( 'rowspan' );
 		$( this ).removeAttr( 'colspan' );
 
+		var elm;
 		for ( i = 1; i < colspan; i++ ) {
 			if ( $( this ).get(0).tagName.match( /td/i ) ) {
-				var elm = $( '<td>' );
+				elm = $( '<td>' );
 			} else if ( $( this ).get(0).tagName.match( /th/i ) ) {
 				elm = $( '<th>' );
 			}
@@ -845,7 +851,7 @@ function removeInput() {
 }
 
 function getMessage( selector ) {
-	var selector = selector || '.default';
+	selector = selector || '.default';
 
 	clearTimeout( timer );
 
